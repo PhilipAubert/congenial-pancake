@@ -20,6 +20,16 @@
   gap:0.5rem;
 }
 
+.responseList {
+  width:30rem;
+  max-height:30rem;
+  min-height:1.5rem;
+  background-color: black;
+  overflow:auto;
+  display:flex;
+  flex-direction:column-reverse;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

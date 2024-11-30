@@ -42,13 +42,14 @@ const App = () => {
       <button onClick={() => fetching('StarTrek')} style={{backgroundColor: 'darkorange'}}>Star Trek </button>
       <button onClick={() => { fetchMultiple(['JurassicPark', 'StarWars', 'Pokemon', 'IndianaJones', 'StarTrek']);}} style={{backgroundColor: 'red'}}>All</button>
       </div>
-      <div style={{width:'480px', height:'480px', backgroundColor: 'black', overflowY:'auto', overflowX:'hidden'}}>
+      <div className="responseList">
+        <div className="responseContent">
         {resultList.map((result, index) => {
           return (
             <li key={`listItem_${index}`}>{`Request to ${result.url}`}</li>
           )
         })}
-        
+        </div>
       </div>
       <button onClick={() => setResultList([])} style={{backgroundColor: "grey"}}>Clear</button>
     </div>
