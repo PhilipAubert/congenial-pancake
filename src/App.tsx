@@ -35,11 +35,11 @@ const App = () => {
   return (
     <div className="content">
       <div className="buttons">
-      <button onClick={() => fetching('JurassicPark')} style={{backgroundColor: 'pink'}}>Jurassic Park</button>
+      <button onClick={() => fetching('JurassicPark')} style={{backgroundColor: 'black'}}>Jurassic Park</button>
       <button onClick={() => fetching('StarWars')} style={{backgroundColor: 'blue'}}>Star Wars </button>
       <button onClick={() => fetching('Pokemon')} style={{backgroundColor: 'green'}}>Pokemon </button>
       <button onClick={() => fetching('IndianaJones')} style={{backgroundColor: 'purple'}}>Indiana Jones</button>
-      <button onClick={() => fetching('StarTrek')} style={{backgroundColor: 'orange'}}>Star Trek </button>
+      <button onClick={() => fetching('StarTrek')} style={{backgroundColor: 'darkorange'}}>Star Trek </button>
       <button onClick={() => { fetchMultiple(['JurassicPark', 'StarWars', 'Pokemon', 'IndianaJones', 'StarTrek']);}} style={{backgroundColor: 'red'}}>All</button>
       </div>
       <div style={{width:'480px', height:'480px', backgroundColor: 'black', overflowY:'auto', overflowX:'hidden'}}>
