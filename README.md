@@ -24,7 +24,7 @@ Seeing as the first approach felt a lot more maintainable, easy to use, and a lo
 ## Research
 
 Seeing as I hadn't implemented this exact feature before, I wanted to see what others had done to implement similiar things. I decided to paste the whole 
-assignment into ChatGPT to see what it would cook up. It cooked up a python script, where it explained that using **semaphores** it could easily create
+assignment into ChatGPT to see what it would cook up. It cooked up a python script where it explained that by using **semaphores** it could easily create
 a function to achieve the desired result. 
 
 I then moved on to googling 'Javascript semaphores', and found an article on medium.com (https://medium.com/swlh/semaphores-in-javascript-e415b0d684bc)
@@ -32,7 +32,7 @@ that showed a possible implementation of semaphores in javascript. I spent some 
 came across some article explaining that semaphores are in fact just a fancy word for creating lock/release mechanics to handle concurrent actions.
 
 Wanting a simpler implementation than the one I found on the medium article, I checked some things on stackoverflow and found an example of a semaphore
-implementation using **queues**, which sounded perfect for the assignment. 
+implementation using **queues** (https://stackoverflow.com/questions/17528749/semaphore-like-queue-in-javascript), which sounded perfect for the assignment. 
 
 ## Issues
 
