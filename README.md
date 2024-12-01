@@ -37,9 +37,9 @@ implementation using **queues** (https://stackoverflow.com/questions/17528749/se
 ## Issues
 
 Most of the time spent coding was trying to implement a minimal approach to semaphores including a queue, and getting this to work properly with my desired
-react hook flow. I wanted the useFetch hook to return a promise so that the developer could resolve the promise on their own terms - but that caused
+react hook flow. I wanted the useFetch hook to return a Response type so that the developer could resolve the promise on their own terms - but that caused
 some issues with returning the same promise to several requests, as it can only be resolved once. I figured I could implement some logic to clone the promise and return
-that instead, but I ran out of available time so I put that on hold. For future implementations I would like to return a Promise instead of string.
+that instead, but I ran out of available time so I put that on hold. For future implementations I would like to return a Response instead of string.
 
 ## Running it locally
 
