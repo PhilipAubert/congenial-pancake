@@ -47,3 +47,13 @@ Clone repository, open terminal, run command `npm install`, and when that is don
 The view in the client shows one URL per request that has received a response - but I recommend also opening the browser dev tools
 and add some throttling to see that the semaphore logic is working. If you for example spam one request, you will see a lot of responses
 in the client view - but in the dev tool you should see that they all got the response from the same request.
+
+## Testing
+
+Since I do not have a lot of previous experience with writing unit tests, I decided to come back the next day to see if I could get some unit tests up and running.
+Initially I noticed that there is a lot of setup involved when you want to test network requests and hook functionality, but once I got past that hurdle - writing 
+tests for the files involving the Semaphores went quite well by reading through Jest documentation. On the useFetch hook, on the other hand, I struggled a lot with
+finding the correct way to test it. I decided to google extensively to look at some examples, and even asked ChatGPT what types of tests would make sense to test 
+the useFetch hook. I found a few ways that possibly could make sense to include as tests - but I feel like the useFetch tests could have been written a lot better 
+if I had been more familiar with writing tests in general. I'll leave it in for further discussion and perhaps get some pointers on how to better test functionality
+like this.

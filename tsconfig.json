@@ -1,4 +1,12 @@
 {
+  "compilerOptions": {
+    // ... your existing compiler options
+    "types": ["jest", "node", "@testing-library/jest-dom"]
+  },
+  "include": [
+    "src/**/*",
+    "jest.setup.js"
+  ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
