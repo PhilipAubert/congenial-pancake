@@ -23,7 +23,7 @@ Seeing as the first approach felt a lot more maintainable, easy to use, and a lo
 
 ## Research
 
-Seeing as I hadn't implemented this exact feature before, I wanted to see what others had done to implement similiar things. I decided to paste the whole 
+As I hadn't implemented this exact feature before, I wanted to see what others had done to implement similiar things. I decided to paste the whole 
 assignment into ChatGPT to see what it would cook up. It cooked up a python script where it explained that by using **semaphores** it could easily create
 a function to achieve the desired result. 
 
@@ -38,8 +38,8 @@ implementation using **queues** (https://stackoverflow.com/questions/17528749/se
 
 Most of the time spent coding was trying to implement a minimal approach to semaphores including a queue, and getting this to work properly with my desired
 react hook flow. I wanted the useFetch hook to return a promise so that the developer could resolve the promise on their own terms - but that caused
-some issues with returning the same promise to several requests, as it can only be resolved once. I figiured I could implement some logic to clone the promise and return
-that instead, but I ran out of available time so I put that on hold for another time. For future implementations I would like to return a Promise instead of string.
+some issues with returning the same promise to several requests, as it can only be resolved once. I figured I could implement some logic to clone the promise and return
+that instead, but I ran out of available time so I put that on hold. For future implementations I would like to return a Promise instead of string.
 
 ## Running it locally
 
@@ -53,7 +53,7 @@ in the client view - but in the dev tool you should see that they all got the re
 Since I do not have a lot of previous experience with writing unit tests, I decided to come back the next day to see if I could get some unit tests up and running.
 Initially I noticed that there is a lot of setup involved when you want to test network requests and hook functionality, but once I got past that hurdle - writing 
 tests for the files involving the Semaphores went quite well by reading through Jest documentation. On the useFetch hook, on the other hand, I struggled a lot with
-finding the correct way to test it. I decided to google extensively to look at some examples, and even asked ChatGPT what types of tests would make sense to test 
+finding the correct way to test it. I turned to google to look at some examples, and even asked ChatGPT what types of tests would make sense for testing 
 the useFetch hook. I found a few ways that possibly could make sense to include as tests - but I feel like the useFetch tests could have been written a lot better 
 if I had been more familiar with writing tests in general. I'll leave it in for further discussion and perhaps get some pointers on how to better test functionality
 like this.
